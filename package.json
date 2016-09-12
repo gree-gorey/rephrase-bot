@@ -21,6 +21,8 @@
   "homepage": "https://github.com/gree-gorey/rephrase-bot",
   "dependencies": {
     "botbuilder": "^0.6.5",
-    "restify": "^4.0.4"
+    "restify": "^4.0.4",
+    "request": "^2.74.0",
+    "request-promise": "^4.1.1"
   }
 }
