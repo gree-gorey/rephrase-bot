@@ -9,7 +9,7 @@ var args = {
     "analyzerIds": [
         "08ea174b-bfdb-4e64-987e-602f85da7f72",
         "4fa79af1-f22c-408d-98bb-b7d7aeef7f04"],
-    "text": "Мама мыла красивую раму"
+    "text": ""
 };
 
 var rp = require('request-promise');
@@ -61,8 +61,8 @@ server.get(/.*/, restify.serveStatic({
 
 // Create chat bot
 var connector = new builder.ChatConnector({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
+    appId: 'cdce3b5b-a642-4fec-90e7-e827fed2af19',
+    appPassword: 'J6kCS2WHTpkvvas5gLEQigE'
 });
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
