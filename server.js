@@ -1,11 +1,10 @@
-
 var restify = require('restify');
 var builder = require('botbuilder');
 
 // Get secrets from server environment
 var botConnectorOptions = { 
-    appId: 'cdce3b5b-a642-4fec-90e7-e827fed2af19', 
-    appSecret: 'J6kCS2WHTpkvvas5gLEQigE' 
+    appId: process.env.BOTFRAMEWORK_APPID, 
+    appSecret: process.env.BOTFRAMEWORK_APPSECRET 
 };
 
 // Create bot
