@@ -1,0 +1,26 @@
+{
+  "name": "rephrasebot",
+  "version": "1.0.0",
+  "description": "A sample rephrase bot",
+  "main": "server.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gree-gorey/rephrase-bot"
+  },
+  "keywords": [
+    "rephrasebot"
+  ],
+  "author": "gree-gorey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gree-gorey/rephrase-bot/issues"
+  },
+  "homepage": "https://github.com/gree-gorey/rephrase-bot",
+  "dependencies": {
+    "botbuilder": "^0.6.5",
+    "restify": "^4.0.4"
+  }
+}
