@@ -56,8 +56,8 @@ server.get(/.*/, restify.serveStatic({
 
 // Create chat bot
 var connector = new builder.ChatConnector({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
+    appId: 'cdce3b5b-a642-4fec-90e7-e827fed2af19',
+    appPassword: 'J6kCS2WHTpkvvas5gLEQigE'
 });
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
