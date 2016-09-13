@@ -41,17 +41,18 @@ var builder = require('botbuilder');
 // Bot Setup
 //=========================================================
 
-// Serve a static web page
-server.get(/.*/, restify.serveStatic({
-	'directory': '.',
-	'default': 'index.html'
-}));
 
 // Setup Restify Server
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
     console.log('%s listening to %s', server.name, server.url);
 });
+
+// Serve a static web page
+server.get(/.*/, restify.serveStatic({
+	'directory': '.',
+	'default': 'index.html'
+}));
 
 // Create chat bot
 var connector = new builder.ChatConnector({
