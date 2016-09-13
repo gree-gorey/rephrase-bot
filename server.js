@@ -68,7 +68,7 @@ server.post('/api/messages', connector.listen());
 
 bot.dialog('/', [
         function (session) {
-            builder.Prompts.text(session, 'Hi! Enter sentence to rephrase:	');
+            builder.Prompts.text(session, 'Enter sentence to rephrase:	');
         },
         function (session, results) {
             args["text"] = results.response;

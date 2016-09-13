@@ -57,4 +57,6 @@ def create_dict():
     with codecs.open('./dict.json', 'w', 'utf-8') as w:
         json.dump(d, w, ensure_ascii=False, indent=2)
 
-create_dict()
+
+if __name__ == '__main__':
+    create_dict()
